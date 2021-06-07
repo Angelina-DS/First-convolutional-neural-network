@@ -48,6 +48,7 @@ val_acc_values = history_dict['val_accuracy']
 n = len(acc_values)
 epochs = range(1, n+1)
 
+#plt.subplot(2,1,1)
 plt.plot(epochs, acc_values, 'bo', label='Training accuracy') #bo is for blue dot
 plt.plot(epochs, val_acc_values, 'b', label='Validation accuracy') #b is for "solid blue line"
 plt.title('Training and validation accuracy')
@@ -60,6 +61,7 @@ plt.show()
 loss_values = history_dict['loss']
 val_loss_values = history_dict['val_loss']
 
+#plt.subplot(2,1,1)
 plt.plot(epochs, loss_values, 'bo', label='Training loss')
 plt.plot(epochs, val_loss_values, 'b', label='Validation loss')
 plt.title('Training and validation loss')
