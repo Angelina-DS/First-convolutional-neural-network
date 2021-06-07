@@ -22,7 +22,7 @@ test_images = test_images.astype('float32')/255
 train_labels = np_utils.to_categorical(train_labels)
 test_labels = np_utils.to_categorical(test_labels)
 
-##Three Convolution layers and one fully-connected layer
+#Three Convolution layers and one fully-connected layer
 model = Sequential([
     Conv2D(16, (3,3), activation='relu', input_shape=(28,28,1)), #16 different 3*3 kernels
     MaxPooling2D(pool_size=(2,2)), #Pool the max values over a 2*2 kernel
